@@ -233,7 +233,7 @@ def format_references(refs_text):
     return result
 
 # ── LaTeX 文档头 ──────────────────────────────────────────────────────────────
-latex_header = r"""\documentclass[11pt,a4paper,oneside,openany]{book}
+latex_header = r"""\documentclass[11pt,a4paper,twoside,openany]{book}
 
 % ── 宏包 ──────────────────────────────────────────────────────────────────────
 \usepackage{xeCJK}
@@ -293,12 +293,13 @@ latex_header = r"""\documentclass[11pt,a4paper,oneside,openany]{book}
 \graphicspath{{/home/ubuntu/singapore_book/images/}}
 \captionsetup{font=small,labelfont=bf,skip=4pt}
 
-% ── 页眉页脚（仅显示页码，不显示章节标题） ────────────────────────────────────
+% ── 页眉页脚（页眉无内容无线，页码在页脚外侧角：奇数页右下，偶数页左下） ──────────
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[C]{\thepage}
-\renewcommand{\headrulewidth}{0.4pt}
-\fancypagestyle{plain}{\fancyhf{}\fancyhead[C]{\thepage}\renewcommand{\headrulewidth}{0.4pt}}
+\fancyfoot[RO,LE]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[RO,LE]{\thepage}\renewcommand{\headrulewidth}{0pt}\renewcommand{\footrulewidth}{0pt}}
 
 \begin{document}
 
