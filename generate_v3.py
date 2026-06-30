@@ -62,7 +62,7 @@ IMAGE_CAPTIONS = {
     "marymount":         "玛丽蒙一带的绿化住宅环境",
     "potong_pasir":      "波东巴西组屋区街景",
     "radin_mas":         "拉丁马士一带的住宅区景观",
-    "kebun_baru":        "锦茂一带的绿化社区环境",
+    "kebun_baru":        "哥本峇鲁一带的绿化社区环境",
     "east_coast":        "东海岸公园海滨景观",
     "marine_parade":     "马林百列一带的海滨住宅区",
     "aljunied":          "阿裕尼一带的组屋与商业区",
@@ -127,7 +127,7 @@ smc_map = {
     "Hougang":            "后港单选区 (Hougang SMC)",
     "Jalan Kayu":         "惹兰加由单选区 (Jalan Kayu SMC)",
     "Jurong Central":     "裕廊中单选区 (Jurong Central SMC)",
-    "Kebun Baru":         "锦茂单选区 (Kebun Baru SMC)",
+    "Kebun Baru":         "哥本峇鲁单选区 (Kebun Baru SMC)",
     "Marymount":          "玛丽蒙单选区 (Marymount SMC)",
     "Mountbatten":        "蒙巴登单选区 (Mountbatten SMC)",
     "Pioneer":            "先驱单选区 (Pioneer SMC)",
@@ -233,7 +233,7 @@ def format_references(refs_text):
     return result
 
 # ── LaTeX 文档头 ──────────────────────────────────────────────────────────────
-latex_header = r"""\documentclass[11pt,a4paper,twoside]{book}
+latex_header = r"""\documentclass[11pt,a4paper,oneside,openany]{book}
 
 % ── 宏包 ──────────────────────────────────────────────────────────────────────
 \usepackage{xeCJK}
@@ -280,24 +280,25 @@ latex_header = r"""\documentclass[11pt,a4paper,twoside]{book}
 % ── 标题格式 ──────────────────────────────────────────────────────────────────
 \titleformat{\part}[display]
   {\normalfont\huge\bfseries\centering\color{darkgray}}
-  {\partname}{20pt}{\Huge}
+  {}{0pt}{\Huge}
 \titleformat{\chapter}[display]
   {\normalfont\Large\bfseries\color{darkgray}}
-  {\chaptertitlename\ \thechapter}{16pt}{\LARGE}
+  {}{0pt}{\LARGE}
 \titleformat{\section}
   {\normalfont\large\bfseries}{\thesection}{1em}{}
+% 去掉章之间的空白页
+\renewcommand{\cleardoublepage}{\clearpage}
 
 % ── 图片设置 ──────────────────────────────────────────────────────────────────
 \graphicspath{{/home/ubuntu/singapore_book/images/}}
 \captionsetup{font=small,labelfont=bf,skip=4pt}
 
-% ── 页眉页脚 ──────────────────────────────────────────────────────────────────
+% ── 页眉页脚（仅显示页码，不显示章节标题） ────────────────────────────────────
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[LE,RO]{\thepage}
-\fancyhead[RE]{\leftmark}
-\fancyhead[LO]{\rightmark}
+\fancyhead[C]{\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyhead[C]{\thepage}\renewcommand{\headrulewidth}{0.4pt}}
 
 \begin{document}
 
@@ -309,7 +310,6 @@ latex_header = r"""\documentclass[11pt,a4paper,twoside]{book}
     \vspace{1.5cm}
     {\LARGE \bfseries 基于2025年最新选区划分 \par}
     \vspace{2cm}
-    {\large 涵盖18个集选区与15个单选区，共33章 \par}
     \vspace{4cm}
     {\Large \bfseries Manus AI 编著 \par}
     \vfill
@@ -327,6 +327,9 @@ latex_header = r"""\documentclass[11pt,a4paper,twoside]{book}
 
 本书综合运用英文、中文、马来文等多语种历史档案与学术文献，采用城市社会学与历史地理学的专业视角，力求以高密度的史料与多维度的分析，为读者呈现一幅完整的狮城街区变迁全景图。各章末尾附有参考资料，以便读者深入查阅原始文献。
 
+\clearpage
+
+\renewcommand{\contentsname}{目录}
 \tableofcontents
 
 \mainmatter
@@ -350,7 +353,8 @@ for part_name, constituencies in sections.items():
 
         # 获取各节内容
         political_history  = format_paragraphs(clean_text(data.get('political_history', '')))
-        early_history      = format_paragraphs(clean_text(data.get('early_history', '')))
+
+        early_history = format_paragraphs(clean_text(data.get('early_history', '')))
         urbanization_raw   = data.get('urbanization', '')
         # 若空，使用补写数据
         if not urbanization_raw or len(urbanization_raw.strip()) < 30:
