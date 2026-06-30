@@ -1,0 +1,334 @@
+{
+  "results": [
+    {
+      "input": "女皇镇单选区 Queenstown SMC",
+      "output": {
+        "image_caption": "这张黑白照片展示了新加坡女皇镇早期组屋的建设场景，是该地区发展历史的代表性画面。",
+        "image_path": "/home/ubuntu/singapore_book/images/queenstown.jpg",
+        "image_source": "https://www.roots.gov.sg/api/media/0efafcf7-52c3-43ae-b599-216c04d0f8df/building-works-at-queenstown.jpg",
+        "success": ""
+      },
+      "error": ""
+    },
+    {
+      "input": "丹戎巴葛集选区 Tanjong Pagar GRC",
+      "output": {
+        "image_caption": "丹戎巴葛集选区一栋具有代表性的旧组屋，展现了该区域的居住特色。",
+        "image_path": "/home/ubuntu/singapore_book/images/tanjong_pagar.jpg",
+        "image_source": "https://medium.com/@jethroyong/is-living-in-an-old-flat-at-tanjong-pagar-still-worth-it-99122312123",
+        "success": ""
+      },
+      "error": ""
+    },
+    {
+      "input": "惹兰勿刹集选区 Jalan Besar GRC",
+      "output": {
+        "image_caption": "惹兰勿刹集选区色彩斑斓的传统店屋街景。",
+        "image_path": "/home/ubuntu/singapore_book/images/jalan_besar_grc.jpg",
+        "image_source": "https://www.expedia.com/Jalan-Besar.dx6199677",
+        "success": ""
+      },
+      "error": ""
+    },
+    {
+      "input": "碧山-大巴窑集选区 Bishan-Toa Payoh GRC",
+      "output": {
+        "image_caption": "碧山-大巴窑集选区的高楼全景。",
+        "image_path": "/home/ubuntu/singapore_book/images/bishan_toa_payoh_grc.jpg",
+        "image_source": "https://www.bistp-tc.org.sg/images/bishan-toa-payoh-town-council.jpg",
+        "success": ""
+      },
+      "error": ""
+    },
+    {
+      "input": "玛丽蒙单选区 Marymount SMC",
+      "output": {
+        "image_caption": "新加坡玛丽蒙单选区的住宅区全景。",
+        "image_path": "/home/ubuntu/singapore_book/images/marymount_smc.jpg",
+        "image_source": "https://www.btptc.org.sg",
+        "success": ""
+      },
+      "error": ""
+    },
+    {
+      "input": "波东巴西单选区 Potong Pasir SMC",
+      "output": {
+        "image_caption": "波东巴西单选区独特的组屋建筑群，以其倾斜的屋顶设计而闻名。",
+        "image_path": "/home/ubuntu/singapore_book/images/potong_pasir_smc.jpg",
+        "image_source": "https://remembersingapore.org",
+        "success": ""
+      },
+      "error": ""
+    },
+    {
+      "input": "拉丁马士单选区 Radin Mas SMC",
+      "output": {
+        "image_caption": "这是新加坡拉丁马士单选区的社区俱乐部，是该区域的标志性建筑。",
+        "image_path": "/home/ubuntu/singapore_book/images/radin_mas.jpg",
+        "image_source": "https://radin-mas-community-club.wheree.com",
+        "success": true
+      },
+      "error": ""
+    },
+    {
+      "input": "锦茂单选区 Kebun Baru SMC",
+      "output": {
+        "image_caption": "新加坡锦茂单选区（Kebun Baru SMC）的邻里购物中心。",
+        "image_path": "/home/ubuntu/singapore_book/images/kebun_baru_smc.jpg",
+        "image_source": "https://www.hdb.gov.sg",
+        "success": ""
+      },
+      "error": ""
+    },
+    {
+      "input": "东海岸集选区 East Coast GRC",
+      "output": {
+        "image_caption": "东海岸集选区一景，展示了组屋和高架列车轨道。",
+        "image_path": "/home/ubuntu/singapore_book/images/east_coast_grc.jpg",
+        "image_source": "https://www.straitstimes.com/singapore/politics/joo-chiat-hived-off-from-marine-parade-absorbed-into-east-coast-grc",
+        "success": ""
+      },
+      "error": ""
+    },
+    {
+      "input": "马林百列-勿拉德高地集选区 Marine Parade-Braddell Heights GRC",
+      "output": {
+        "image_caption": "这是新加坡马林百列-勿拉德高地集选区的一个概览。",
+        "image_path": "/home/ubuntu/singapore_book/images/marine_parade_braddell_heights_grc.jpg",
+        "image_source": "https://www.linkedin.com/pulse/election-spotlight-marine-parade-braddell-heights-grc-yw7he",
+        "success": ""
+      },
+      "error": ""
+    },
+    {
+      "input": "阿裕尼集选区 Aljunied GRC",
+      "output": {
+        "image_caption": "阿裕尼集选区一景，展示了新加坡典型的组屋建筑和郁郁葱葱的绿化。",
+        "image_path": "/home/ubuntu/singapore_book/images/aljunied_grc.jpg",
+        "image_source": "https://www.propertyguru.com.sg/singapore-property-resources/the-ultimate-guide-to-aljunied-things-to-do-eat-see-11234",
+        "success": true
+      },
+      "error": ""
+    },
+    {
+      "input": "蒙巴登单选区 Mountbatten SMC",
+      "output": {
+        "image_caption": "蒙巴登组屋区，展示了新加坡的公共住房景观。",
+        "image_path": "/home/ubuntu/singapore_book/images/mountbatten_smc.png",
+        "image_source": "https://mothership.sg/",
+        "success": true
+      },
+      "error": ""
+    },
+    {
+      "input": "白沙-樟宜集选区 Pasir Ris-Changi GRC",
+      "output": {
+        "image_caption": "新加坡白沙-樟宜集选区的组屋住宅区，展示了该区域的典型景观。",
+        "image_path": "/home/ubuntu/singapore_book/images/pasir_ris-changi_grc.jpg",
+        "image_source": "https://www.google.com/search?q=Pasir+Ris-Changi+GRC+Singapore+HDB\u0026tbm=isch",
+        "success": true
+      },
+      "error": ""
+    },
+    {
+      "input": "淡滨尼集选区 Tampines GRC",
+      "output": {
+        "image_caption": "新加坡淡滨尼集选区的高层组屋住宅区，展示了该区域的典型住宅景观。",
+        "image_path": "/home/ubuntu/singapore_book/images/tampines_grc.jpg",
+        "image_source": "https://www.hdb.gov.sg",
+        "success": true
+      },
+      "error": ""
+    },
+    {
+      "input": "淡滨尼尚育单选区 Tampines Changkat SMC",
+      "output": {
+        "image_caption": "淡滨尼尚育单选区的一处组屋街景，展示了新加坡典型的住宅建筑。",
+        "image_path": "/home/ubuntu/singapore_book/images/tampines_changkat_smc.jpg",
+        "image_source": "https://www.srx.com.sg/hdb/tampines-street-11/11011",
+        "success": ""
+      },
+      "error": ""
+    },
+    {
+      "input": "三巴旺集选区 Sembawang GRC",
+      "output": {
+        "image_caption": "新加坡三巴旺集选区的组屋，色彩鲜艳，充满活力。",
+        "image_path": "/home/ubuntu/singapore_book/images/sembawang_grc.jpg",
+        "image_source": "https://www.google.com/search?q=Sembawang+GRC+Singapore+HDB\u0026tbm=isch",
+        "success": true
+      },
+      "error": ""
+    },
+    {
+      "input": "三巴旺西单选区 Sembawang West SMC",
+      "output": {
+        "image_caption": "三巴旺西单选区的组屋全景，展现了新加坡的住宅特色。",
+        "image_path": "/home/ubuntu/singapore_book/images/sembawang_west.jpg",
+        "image_source": "",
+        "success": true
+      },
+      "error": ""
+    },
+    {
+      "input": "义顺集选区 Nee Soon GRC",
+      "output": {
+        "image_caption": "这是新加坡义顺邮政局的旧址，代表了义顺集选区的历史风貌。",
+        "image_path": "/home/ubuntu/singapore_book/images/nee_soon_grc.jpg",
+        "image_source": "https://remembersingapore.org/2012/07/10/singapore-former-old-post-offices/",
+        "success": ""
+      },
+      "error": ""
+    },
+    {
+      "input": "马西岭-油池集选区 Marsiling-Yew Tee GRC",
+      "output": {
+        "image_caption": "马西岭-油池集选区的住宅区和绿化环境。",
+        "image_path": "/home/ubuntu/singapore_book/images/marsiling_yew_tee_grc.png",
+        "image_source": "https://www.myttc.org.sg/",
+        "success": ""
+      },
+      "error": ""
+    },
+    {
+      "input": "杨厝港单选区 Yio Chu Kang SMC",
+      "output": {
+        "image_caption": "这是新加坡杨厝港游泳综合体的建筑外观。",
+        "image_path": "/home/ubuntu/singapore_book/images/yio_chu_kang.jpg",
+        "image_source": "https://www.estate.sg/",
+        "success": true
+      },
+      "error": ""
+    },
+    {
+      "input": "惹兰加由单选区 Jalan Kayu SMC",
+      "output": {
+        "image_caption": "惹兰加由单选区的城市景观，展示了高楼建筑和绿化带。",
+        "image_path": "/home/ubuntu/singapore_book/images/jalan_kayu.jpg",
+        "image_source": "https://www.channelnewsasia.com",
+        "success": ""
+      },
+      "error": ""
+    },
+    {
+      "input": "宏茂桥集选区 Ang Mo Kio GRC",
+      "output": {
+        "image_caption": "宏茂桥集选区的一栋组屋，代表了新加坡的公共住房特色。",
+        "image_path": "/home/ubuntu/singapore_book/images/ang_mo_kio.jpg",
+        "image_source": "https://www.hdb.gov.sg/",
+        "success": ""
+      },
+      "error": ""
+    },
+    {
+      "input": "盛港集选区 Sengkang GRC",
+      "output": {
+        "image_caption": "盛港集选区的高层组屋住宅区。",
+        "image_path": "/home/ubuntu/singapore_book/images/sengkang_grc.jpeg",
+        "image_source": "https://www.channelnewsasia.com/news/singapore/sengkang-town-council-lower-rating-arrears-management-13970790",
+        "success": ""
+      },
+      "error": ""
+    },
+    {
+      "input": "榜鹅集选区 Punggol GRC",
+      "output": {
+        "image_caption": "榜鹅集选区的一栋组屋，展示了新加坡的公共住房特色。",
+        "image_path": "/home/ubuntu/singapore_book/images/punggol_grc.jpg",
+        "image_source": "https://www.schomburg.com",
+        "success": ""
+      },
+      "error": ""
+    },
+    {
+      "input": "后港单选区 Hougang SMC",
+      "output": {
+        "image_caption": "这张图片展示了新加坡后港单选区的一个现代组屋区，环境优美，绿化良好。",
+        "image_path": "/home/ubuntu/singapore_book/images/hougang_smc.jpg",
+        "image_source": "https://www.hdb.gov.sg",
+        "success": ""
+      },
+      "error": ""
+    },
+    {
+      "input": "荷兰-武吉知马集选区 Holland-Bukit Timah GRC",
+      "output": {
+        "image_caption": "一幅描绘了公园景观和组屋的插画，代表了荷兰-武吉知马集选区的社区生活。",
+        "image_path": "/home/ubuntu/singapore_book/images/holland_bukit_timah_grc.jpg",
+        "image_source": "https://www.hbptc.org.sg",
+        "success": true
+      },
+      "error": ""
+    },
+    {
+      "input": "裕廊东-武吉巴督集选区 Jurong East-Bukit Batok GRC",
+      "output": {
+        "image_caption": "裕廊东-武吉巴督集选区的一个现代化建筑群，可能是组屋或公共设施。",
+        "image_path": "/home/ubuntu/singapore_book/images/jurong_east_bukit_batok.jpeg",
+        "image_source": "https://www.ourneighbourhood.sg/stories/bukit-batok-east-s-five-year-masterplan-showcases-a-rejuvenated-estate",
+        "success": ""
+      },
+      "error": ""
+    },
+    {
+      "input": "西海岸-裕廊西集选区 West Coast-Jurong West GRC",
+      "output": {
+        "image_caption": "这张图片展示了裕廊西的标志性建筑，双塔宝塔，它坐落在湖中，周围绿树环绕。",
+        "image_path": "/home/ubuntu/singapore_book/images/west_coast_jurong_west_grc.jpg",
+        "image_source": "https://www.tripadvisor.in/Attractions-g294265-Activities-c47-zfn15622360-Singapore.html",
+        "success": ""
+      },
+      "error": ""
+    },
+    {
+      "input": "蔡厝港集选区 Chua Chu Kang GRC",
+      "output": {
+        "image_caption": "蔡厝港市镇中心。",
+        "image_path": "/home/ubuntu/singapore_book/images/chua_chu_kang_grc.jpg",
+        "image_source": "https://www.google.com/search?q=Choa+Chu+Kang+Town+Centre+Singapore",
+        "success": true
+      },
+      "error": ""
+    },
+    {
+      "input": "武吉甘柏单选区 Bukit Gombak SMC",
+      "output": {
+        "image_caption": "这是新加坡武吉甘柏邻里中心的标志牌，展示了该区域的特色。",
+        "image_path": "/home/ubuntu/singapore_book/images/bukit_gombak_smc.jpg",
+        "image_source": "N/A",
+        "success": ""
+      },
+      "error": ""
+    },
+    {
+      "input": "武吉班让单选区 Bukit Panjang SMC",
+      "output": {
+        "image_caption": "武吉班让单选区，拥有自然步道和夜光步道，是新加坡一个充满绿意的住宅区。",
+        "image_path": "/home/ubuntu/singapore_book/images/bukit_panjang_smc.jpg",
+        "image_source": "https://thesmartlocal.com/read/bukit-panjang-perks/",
+        "success": ""
+      },
+      "error": ""
+    },
+    {
+      "input": "裕廊中单选区 Jurong Central SMC",
+      "output": {
+        "image_caption": "裕廊西中央1号的组屋建筑，代表了裕廊中单选区的住宅特色。",
+        "image_path": "/home/ubuntu/singapore_book/images/jurong_central.jpg",
+        "image_source": "https://www.srx.com.sg/hdb/jurong-west/jurong-west-central-1-hsjur0053/last-transacted-prices/sale/hdb-executive",
+        "success": ""
+      },
+      "error": ""
+    },
+    {
+      "input": "先驱单选区 Pioneer SMC",
+      "output": {
+        "image_caption": "新加坡先驱单选区的先驱购物中心。",
+        "image_path": "/home/ubuntu/singapore_book/images/pioneer_smc.jpg",
+        "image_source": "",
+        "success": true
+      },
+      "error": ""
+    }
+  ]
+}

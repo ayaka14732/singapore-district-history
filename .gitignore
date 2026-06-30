@@ -17,3 +17,13 @@ test_compile.*
 # Python 缓存
 __pycache__/
 *.pyc
+
+# 封面/封底 PDF（由PNG生成，可重建）
+images/book_cover.pdf
+images/book_backcover.pdf
+
+# 中间参考图片
+images/cover_bg.jpg
+images/cover_map.png
+images/sg_map_ref.jpg
+images/sg_outline_ref.jpg
