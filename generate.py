@@ -277,7 +277,7 @@ latex_header = r"""\documentclass[11pt,a4paper,twoside,openany]{book}
   {}{0pt}{\Huge}
 \titleformat{\chapter}[display]
   {\normalfont\Large\bfseries\color{darkgray}}
-  {}{0pt}{\LARGE}
+  {第\thechapter 章}{0.5em}{\LARGE}
 \titleformat{\section}
   {\normalfont\large\bfseries}{\thesection}{1em}{}
 % 去掉章之间的空白页
