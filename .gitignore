@@ -6,12 +6,9 @@
 *.synctex.gz
 *.fls
 *.fdb_latexmk
+*.pdf
 
-# 旧版本文件
-book.tex
-book.pdf
-book_fixed.tex
-book_fixed.pdf
+# 其他文件
 test_compile.*
 
 # Python 缓存

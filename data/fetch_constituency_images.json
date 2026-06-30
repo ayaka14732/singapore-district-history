@@ -71,9 +71,9 @@
       "error": ""
     },
     {
-      "input": "锦茂单选区 Kebun Baru SMC",
+      "input": "哥本峇鲁单选区 Kebun Baru SMC",
       "output": {
-        "image_caption": "新加坡锦茂单选区（Kebun Baru SMC）的邻里购物中心。",
+        "image_caption": "新加坡哥本峇鲁单选区（Kebun Baru SMC）的邻里购物中心。",
         "image_path": "/home/ubuntu/singapore_book/images/kebun_baru_smc.jpg",
         "image_source": "https://www.hdb.gov.sg",
         "success": ""

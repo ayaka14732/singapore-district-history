@@ -4,11 +4,7 @@
 修复：
 1. 首段首行缩进2字符（中文排版规范）
 2. 参考资料改为 [1][2] 编号格式，无缩进，小段间距
-3. 书名改为「新加坡分区历史」
-4. 参考资料链接保持黑色
-5. 有图片的选区插入图片
-6. 补写空白节（urbanization）
-7. 修正汉字错误（后港、四美）
+3. 有图片的选区插入图片
 """
 import json
 import re
@@ -16,11 +12,11 @@ import os
 from pathlib import Path
 
 # ── 读取数据 ──────────────────────────────────────────────────────────────────
-with open('/home/ubuntu/research_constituencies.json', 'r', encoding='utf-8') as f:
+with open('./data/research_constituencies.json', 'r', encoding='utf-8') as f:
     orig_data = json.load(f)
-with open('/home/ubuntu/fix_constituencies.json', 'r', encoding='utf-8') as f:
+with open('./data/fix_constituencies.json', 'r', encoding='utf-8') as f:
     fix_data = json.load(f)
-with open('/home/ubuntu/fix_empty_sections.json', 'r', encoding='utf-8') as f:
+with open('./data/fix_empty_sections.json', 'r', encoding='utf-8') as f:
     empty_fix_data = json.load(f)
 
 orig_results = orig_data.get('results', [])
@@ -28,7 +24,7 @@ fix_results  = fix_data.get('results', [])
 empty_fix_results = empty_fix_data.get('results', [])
 
 # ── 已有图片映射 ──────────────────────────────────────────────────────────────
-IMAGES_DIR = Path('/home/ubuntu/singapore_book/images')
+IMAGES_DIR = Path('./images')
 AVAILABLE_IMAGES = {p.stem: str(p) for p in IMAGES_DIR.glob('*') if p.suffix in ('.jpg','.png','.jpeg')}
 
 # 选区英文关键词 → 图片文件名（stem）
@@ -176,9 +172,6 @@ def clean_text(text):
     text = re.sub(r'^#{1,6}\s+(.*)$', r'\1', text, flags=re.MULTILINE)
     text = re.sub(r'^\s*[-*+]\s+', '', text, flags=re.MULTILINE)
     text = re.sub(r'^\s*\d+\.\s+', '', text, flags=re.MULTILINE)
-    # 修正已知汉字错误
-    text = text.replace('欧港', '后港')
-    text = text.replace('Simei', '四美').replace('西美', '四美')
     # LaTeX 转义（先处理反斜杠）
     text = text.replace('\\', '\\textbackslash{}')
     text = text.replace('&',  '\\&')
@@ -274,7 +267,7 @@ latex_header = r"""\documentclass[11pt,a4paper,twoside,openany]{book}
     filecolor=darkgray,
     urlcolor=black,
     pdftitle={新加坡各区历史},
-    pdfauthor={Manus AI},
+    pdfauthor={Manus AI, 三日月绫香},
     pdfsubject={新加坡33个选区的历史与城市发展},
 }
 
@@ -291,7 +284,7 @@ latex_header = r"""\documentclass[11pt,a4paper,twoside,openany]{book}
 \renewcommand{\cleardoublepage}{\clearpage}
 
 % ── 图片设置 ──────────────────────────────────────────────────────────────────
-\graphicspath{{/home/ubuntu/singapore_book/images/}}
+\graphicspath{{./images/}}
 \captionsetup{font=small,labelfont=bf,skip=4pt}
 
 % ── 页眉页脚（页眉无内容无线，页码在页脚外侧角：奇数页右下，偶数页左下） ──────────
@@ -305,7 +298,7 @@ latex_header = r"""\documentclass[11pt,a4paper,twoside,openany]{book}
 \begin{document}
 
 % ── 封面（pdfpages全页插入） ───────────────────────────────────────────────────────
-\includepdf[pages=1,fitpaper=true]{/home/ubuntu/singapore_book/images/book_cover.pdf}
+\includepdf[pages=1,fitpaper=true]{./images/book_cover.pdf}
 
 \frontmatter
 
@@ -409,13 +402,13 @@ for part_name, constituencies in sections.items():
 latex_footer = r"""
 % ── 封底（pdfpages全页插入） ───────────────────────────────────────────────────────
 \backmatter
-\includepdf[pages=1,fitpaper=true]{/home/ubuntu/singapore_book/images/book_backcover.pdf}
+\includepdf[pages=1,fitpaper=true]{./images/book_backcover.pdf}
 
 \end{document}
 """
 
 # ── 写入文件 ──────────────────────────────────────────────────────────────────
-output_path = '/home/ubuntu/singapore_book/book_v3.tex'
+output_path = './book_v3.tex'
 with open(output_path, 'w', encoding='utf-8') as f:
     f.write(latex_header)
     f.write(body)
